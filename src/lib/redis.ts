@@ -1,5 +1,5 @@
-import { createClient } from "redis";
+import { createClient } from 'redis';
 export const redis = createClient({
-    url: 'redis://:docker@localhost:6379', database: 1,
+    url: 'redis://:docker@localhost:6379/0',
 })
 redis.connect()
